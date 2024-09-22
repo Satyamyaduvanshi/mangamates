@@ -85,7 +85,7 @@ export const fetchEpisodes = createAsyncThunk(
 
 
 const animePageSlice = createSlice({
-    name: animePageSlice,
+    name: "animePageSlice",
     initialState: {
         animeData: [],
         CharacterData: [],
