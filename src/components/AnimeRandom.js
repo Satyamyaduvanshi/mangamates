@@ -154,7 +154,7 @@ function AnimeRandom() {
                 )}
               </li>
               <li>
-                Aired:
+                Aired: {" "}
                 {aired && aired.from === null
                   ? "unknown"
                   : (aired && aired.from.slice(0, 10)) || (
@@ -162,7 +162,7 @@ function AnimeRandom() {
                     )}
               </li>
               <li>
-                Premiered: {season === null ? "unknown" : season}
+                Premiered: {season === null ? "unknown" : season} {" "}
                 {year === null
                   ? ""
                   : year || (
