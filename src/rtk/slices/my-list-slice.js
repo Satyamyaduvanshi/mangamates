@@ -28,11 +28,11 @@ const myListSlice = createSlice({
 })
 
 export const {
-    watchedList,
-    planToWatchList,
-    watchingList,
-    favoriteList,
-    badList,
+    addToWatchingList,
+    addToWatchedList,
+    addToBadList,
+    addToFavoriteList,
+    addToPlanToWatchingList,
 }= myListSlice.actions
 
 export default myListSlice.reducer
