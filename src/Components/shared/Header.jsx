@@ -26,7 +26,7 @@ function Header() {
     };
 
     return (
-        <header className="rounded bg-white bg-opacity-70 backdrop-blur-md dark:bg-gray-900 dark:bg-opacity-70 flex items-center justify-between p-4 shadow-lg fixed top-0 left-0 right-0 z-50 mt-4 mx-4 transition-colors duration-300">
+        <header className="rounded bg-white bg-opacity-70 backdrop-blur-md dark:bg-gray-900 dark:bg-opacity-80 flex items-center justify-between p-4 shadow-lg fixed top-0 left-0 right-0 z-50 mt-4 mx-4 transition-colors duration-300">
             {/* Logo and title */}
             <div className="flex items-center">
                 <img

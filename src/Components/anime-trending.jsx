@@ -26,7 +26,7 @@ const TrendingAnimeList = () => {
         {trendingAnimes && trendingAnimes.length > 0 ? (
           trendingAnimes.map((anime, index) => (
             <li key={anime.id} className="flex m-2">
-              <a href={`https://hianime.to/${anime.id}?ref=search`} target="_blank" rel="noopener noreferrer" className="flex w-full backdrop-blur-md bg-white/30 shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105 p-2"> {/* Added backdrop-blur and bg color */}
+              <a href={`https://hianime.to/${anime.id}?ref=search`} target="_blank" rel="noopener noreferrer" className="flex w-full backdrop-blur-md bg-white/30 shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105 p-2"> 
                 <div className="flex-shrink-0 p-2">
                   <img className="rounded" src={anime.img} alt={anime.name} style={{ width: '150px', height: '200px' }} />
                 </div>
