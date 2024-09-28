@@ -31,7 +31,7 @@ const TrendingAnimeList = () => {
                   <img className="rounded" src={anime.img} alt={anime.name} style={{ width: '150px', height: '200px' }} />
                 </div>
                 <div className="flex-1 p-4">
-                  <p className="text-5xl glow">#{index + 1}</p>
+                  <p className="text-5xl">{index + 1}</p>
                   <p className="text-2xl">{anime.name}</p>
                 </div>
               </a>
