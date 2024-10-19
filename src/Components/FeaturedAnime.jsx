@@ -64,7 +64,8 @@ function FeaturedAnime() {
       {animeList && animeList.length > 0 ? (
         animeList.map((anime) => (
           <SwiperSlide key={anime.id} className="flex justify-center items-center">
-            <div className="bg-white dark:bg-gray-800 rounded-lg transition-transform transform hover:scale-105 p-4">
+          <a href={`https://hianime.to/${anime.id}?ref=search`}>
+          <div className="bg-white dark:bg-gray-800 rounded-lg transition-transform transform hover:scale-105 p-4">
               <img
                 src={anime.img}
                 alt={anime.name}
@@ -73,14 +74,11 @@ function FeaturedAnime() {
               <h3 className="text-xl font-bold mt-2 text-gray-800 dark:text-white text-center">
                 {anime.name}
               </h3>
-              <p className="text-sm text-gray-600 dark:text-gray-300 text-center mb-2">
-                {anime.details} {/* Add any details here if available */}
-              </p>
               <div className="flex justify-center space-x-2">
-                <button className="bg-blue-500 text-white px-4 py-2 rounded">Watch Now</button>
-                <button className="bg-gray-300 text-gray-800 px-4 py-2 rounded">Detail</button>
+                <button className="bg-blue-500 text-white px-4 py-2 rounded item-center">Watch Now</button>
               </div>
             </div>
+          </a>
           </SwiperSlide>
         ))
       ) : (
